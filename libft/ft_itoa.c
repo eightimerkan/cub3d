@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmacmill <jmacmill@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/23 19:37:00 by jmacmill          #+#    #+#             */
-/*   Updated: 2022/03/23 19:37:02 by jmacmill         ###   ########.fr       */
+/*   Created: 2023/07/17 21:13:40 by eightimerka       #+#    #+#             */
+/*   Updated: 2023/07/17 21:13:40 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

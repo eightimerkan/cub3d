@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmacmill <jmacmill@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 22:18:05 by jmacmill          #+#    #+#             */
-/*   Updated: 2022/03/23 19:36:30 by jmacmill         ###   ########.fr       */
+/*   Created: 2023/07/17 21:14:11 by eightimerka       #+#    #+#             */
+/*   Updated: 2023/07/17 21:14:12 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

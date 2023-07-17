@@ -6,7 +6,7 @@
 /*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 18:20:03 by eightimerka       #+#    #+#             */
-/*   Updated: 2023/06/22 19:47:27 by eightimerka      ###   ########.fr       */
+/*   Updated: 2023/06/27 12:43:54 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,6 +131,7 @@ void	ft_calc_step(t_raycast *rc);
 int		ft_color_column(t_raycast *rc);
 void	ft_draw_texture(t_raycast *rc, int x, int y);
 int		ft_exit(t_raycast *rc);
+int		map_check(t_data *data);
 
 /* Functions for parsing*/
 int		get_next_line(int fd, char **line);

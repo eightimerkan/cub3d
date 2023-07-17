@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_count_words.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmacmill <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 22:17:22 by jmacmill          #+#    #+#             */
-/*   Updated: 2022/01/27 20:18:17 by jmacmill         ###   ########.fr       */
+/*   Created: 2023/07/17 21:12:51 by eightimerka       #+#    #+#             */
+/*   Updated: 2023/07/17 21:12:52 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

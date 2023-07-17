@@ -23,18 +23,14 @@ all:	$(NAME)
 
 $(NAME):	$(OBJS)
 	@ar rc $(NAME) $(OBJS)
-	@echo "\t\t\t\tCompile is ready\t\n"
 
 %.o:	%.c
 	@gcc $(FLAGS) -c $< -g -o $@
-	@echo "\t\t\033[32mCompile $@"
 
 clean:
 	@rm -f $(OBJS)
-	@echo "\t\t\t\t\033[032mDelete all libft objects\n"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "\t\t\t\t\033[032mDelete libft.a\n"
 
 re:	fclean all

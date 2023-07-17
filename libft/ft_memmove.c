@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmacmill <jmacmill@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/23 19:37:45 by jmacmill          #+#    #+#             */
-/*   Updated: 2022/03/23 19:37:46 by jmacmill         ###   ########.fr       */
+/*   Created: 2023/07/17 21:14:23 by eightimerka       #+#    #+#             */
+/*   Updated: 2023/07/17 21:14:24 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

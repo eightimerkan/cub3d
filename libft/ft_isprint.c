@@ -3,16 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmacmill <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 22:17:46 by jmacmill          #+#    #+#             */
-/*   Updated: 2022/01/27 20:18:17 by jmacmill         ###   ########.fr       */
+/*   Created: 2023/07/17 21:13:31 by eightimerka       #+#    #+#             */
+/*   Updated: 2023/07/17 21:13:32 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//
-// Created by Mickey Rudge on 5/1/21.
-//
 
 #include "libft.h"
 

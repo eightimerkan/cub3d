@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmacmill <jmacmill@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/23 19:39:24 by jmacmill          #+#    #+#             */
-/*   Updated: 2022/03/23 19:39:25 by jmacmill         ###   ########.fr       */
+/*   Created: 2023/07/17 21:15:32 by eightimerka       #+#    #+#             */
+/*   Updated: 2023/07/17 21:15:33 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -6,7 +6,7 @@
 /*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 18:18:20 by eightimerka       #+#    #+#             */
-/*   Updated: 2023/06/22 18:18:21 by eightimerka      ###   ########.fr       */
+/*   Updated: 2023/06/27 14:56:42 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ void	parse_values(int *i, t_data *data, char **param)
 	while (data->file[*i] && (data->file[*i] == ' ' || data->file[*i] == '\t'))
 		(*i)++;
 	pos = *i;
-	while (data->file[*i] && data->file[*i] != ' ' \
-	&& data->file[*i] != '\n' && data->file[*i] != '\t')
+	while (data->file[*i] && data->file[*i] != ' ' && data->file[*i] != '\n'
+		&& data->file[*i] != '\t')
 		(*i)++;
 	if (pos == (*i))
 	{
@@ -41,6 +41,31 @@ void	parse_values(int *i, t_data *data, char **param)
 		exit(1);
 	}
 	*param = ft_substr(data->file, pos, (*i) - pos);
+}
+
+int	map_check(t_data *data)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	while (data->map[i])
+	{
+		j = 0;
+		while (data->map[i][j])
+		{
+			if (data->map[i][j] == '0')
+			{
+				if (!(data->map[i][j + 1] && data->map[i + 1][j] &&
+						data->map[i - 1][j] && data->map[i][j - 1]))
+					return (1);
+			}
+			j++;
+		}
+		i++;
+	}
+	return (0);
 }
 
 int	main(int argc, char **argv)
@@ -65,6 +90,11 @@ int	main(int argc, char **argv)
 		read_file(data, argv[1]);
 		parse_data(data);
 		init_player(data);
+		if (map_check(data))
+		{
+			ft_error(&rc, "map error\n");
+			return (1);
+		}
 		ft_init(&rc, data);
 		ft_count_lines(&rc);
 		ft_mlx(&rc);
