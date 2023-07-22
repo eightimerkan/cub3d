@@ -12,6 +12,7 @@ FLAGS_MAC	= -framework OpenGL -framework AppKit
 LIBDIR 		= ./libft/
 LIBFT 		= ./libft/libft.a
 LIBINC 		= ./libft/
+MLXDIR 		= ./mlx/
 MLX			= ./mlx/libmlx.a
 
 CC			= gcc
@@ -19,7 +20,7 @@ CFLAGS		= -Wall -Werror -Wextra
 
 DEBUG 		= -g
 
-all:		$(BUILDDIR) $(LIBFT) $(NAME)
+all:		$(MLX) $(LIBFT) $(BUILDDIR) $(NAME)
 
 $(BUILDDIR):
 	mkdir -p $(BUILDDIR)
@@ -33,14 +34,19 @@ $(NAME): $(BUILDOBJS) $(INC)
 $(LIBFT):
 	make -C $(LIBDIR)
 
+$(MLX):
+	make -C $(MLXDIR)
+
 clean:
 	rm -rf $(SRCDIR)$(OBJ)
 	make -C $(LIBDIR) clean
+	make -C $(MLXDIR) clean
 
 fclean: clean
 	rm -rf $(NAME)
 	rm -rf $(BUILDDIR)
 	make -C $(LIBDIR) fclean
+	make -C $(MLXDIR) clean
 
 re: fclean all
 

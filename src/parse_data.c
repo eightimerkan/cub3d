@@ -6,7 +6,7 @@
 /*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 18:19:17 by eightimerka       #+#    #+#             */
-/*   Updated: 2023/06/23 15:32:36 by eightimerka      ###   ########.fr       */
+/*   Updated: 2023/07/23 00:22:43 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,15 +69,25 @@ void	get_features(int *i, t_data *data)
 		my_parsing_values(3, i, data);
 	else if (check_value("EA", *i, data))
 		my_parsing_values(4, i, data);
-	else if (check_color('C', *i, data))
-	{
-		(*i) += 1;
-		parse_color(i, data, 'C');
-	}
 	else if (check_color('F', *i, data))
 	{
+		if (data->floor != -10)
+		{
+			write(1,"ERROR!\n", 7);
+			exit(1);
+		}
 		(*i) += 1;
 		parse_color(i, data, 'F');
+	}
+	else if (check_color('C', *i, data))
+	{
+		if (data->ceiling != -10)
+		{
+			write(1,"ERROR!\n", 7);
+			exit(1);
+		}
+		(*i) += 1;
+		parse_color(i, data, 'C');
 	}
 }
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
+/*   By: mcosar <mcosar@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 18:17:50 by eightimerka       #+#    #+#             */
-/*   Updated: 2023/06/23 17:01:10 by eightimerka      ###   ########.fr       */
+/*   Updated: 2023/07/18 00:54:18 by mcosar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

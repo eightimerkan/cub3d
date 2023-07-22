@@ -6,7 +6,7 @@
 /*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 18:18:20 by eightimerka       #+#    #+#             */
-/*   Updated: 2023/06/27 14:56:42 by eightimerka      ###   ########.fr       */
+/*   Updated: 2023/07/23 00:20:56 by eightimerka      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,14 @@ int	map_check(t_data *data)
 	return (0);
 }
 
+void	init_data_proces(t_data **data, char **argv)
+{
+	init_data(*data);
+	read_file(*data, argv[1]);
+	parse_data(*data);
+	init_player(*data);
+}
+
 int	main(int argc, char **argv)
 {
 	t_data		*data;
@@ -82,17 +90,11 @@ int	main(int argc, char **argv)
 	{
 		data = (t_data *)malloc(sizeof(t_data));
 		if (!data)
-		{
-			write(1, "Error: unable to allocate memory\n", 33);
-			exit(1);
-		}
-		init_data(data);
-		read_file(data, argv[1]);
-		parse_data(data);
-		init_player(data);
+			check_data_error();
+		init_data_proces(&data, argv);
 		if (map_check(data))
 		{
-			ft_error(&rc, "map error\n");
+			printf("MAP ERROR\n");
 			return (1);
 		}
 		ft_init(&rc, data);

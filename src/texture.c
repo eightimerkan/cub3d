@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   texture.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
+/*   By: mcosar <mcosar@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 18:19:50 by eightimerka       #+#    #+#             */
-/*   Updated: 2023/06/22 18:19:51 by eightimerka      ###   ########.fr       */
+/*   Updated: 2023/07/18 02:24:54 by mcosar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

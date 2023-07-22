@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eightimerkan <eightimerkan@student.42.f    +#+  +:+       +#+        */
+/*   By: mcosar <mcosar@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 18:18:07 by eightimerka       #+#    #+#             */
-/*   Updated: 2023/06/23 15:37:58 by eightimerka      ###   ########.fr       */
+/*   Updated: 2023/07/18 00:39:33 by mcosar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,10 @@ void	ft_init(t_raycast *rc, t_data *data)
 	rc->screenx = 960;
 	rc->screeny = 540;
 	ft_init_sub(rc);
+}
+
+void	check_data_error(void)
+{
+	write(1, "Error: unable to allocate memory\n", 33);
+	exit(1);
 }
